@@ -11,7 +11,7 @@
 
 Summary:       Package that installs PHP 8.5
 Name:          %scl_name
-Version:       8.5.0
+Version:       8.5.1
 Vendor:        cPanel, Inc.
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4590 for more details
 %define        release_prefix 1
@@ -178,5 +178,8 @@ mkdir -p %{buildroot}/opt/cpanel/%{scl}/root/usr/share/locale
 %{_root_sysconfdir}/rpm/macros.%{scl_name_base}-scldevel
 
 %changelog
+* Thu Dec 18 2025 Dan Muey <daniel.muey@webpros.com> - 8.5.1-1
+- EA-13294: Update ea-php85 from v8.5.0 to v8.5.1
+
 * Fri Oct 17 2025 Brian Mendoza <brian.mendoza@webpros.com> - 8.5.0-1
 - EA4-127: Initial build
